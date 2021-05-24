@@ -1,0 +1,7 @@
+CREATE TABLE `sms`.`students` ( 
+`id` INT(100) NOT NULL AUTO_INCREMENT , 
+`name` VARCHAR(255) NOT NULL , 
+`Adm_num` VARCHAR(255) NOT NULL , 
+`id_num` INT(100) NOT NULL , 
+`adm_date` DATE NOT NULL DEFAULT CURRENT_TIMESTAMP , PRIMARY KEY (`id`)) 
+ENGINE = InnoDB;
