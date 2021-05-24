@@ -12,8 +12,4 @@
         //throw $th;
         echo "Connection failed".$e->getMessage();
     }
-
-    function login(){
-        
-    }
 ?>
