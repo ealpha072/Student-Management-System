@@ -10,6 +10,6 @@
         $conn->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
     } catch (Exception $e) {
         //throw $th;
-        echo "Connection failed".$e->getMessage();
+        //echo "Connection failed".$e->getMessage();
     }
 ?>
