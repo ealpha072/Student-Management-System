@@ -9,7 +9,7 @@
         <div class="input-group-prepend">
           <span class="input-group-text" id="basic-addon1"><i class="fa fa-envelope" aria-hidden="true"></i></span>
         </div>
-          <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email" name="email">
+          <input type="text" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter username" name="username">
       </div>
 
       <div class="form-group input-group mb-3">
@@ -31,11 +31,6 @@
 				<button type="submit" class="btn btn-dark" name="login"><i class="fa fa-sign-in" aria-hidden="true"></i> Sign In</button>
 			</div>
 		</div>
-
-      <div class="register">
-        <p>Not yet a member? <a href="registration.php">Register</a></p>
-		<a href="forgotpassword.php">I forgot my password</a>
-      </div>
     </form>
   </div>
 </div>
