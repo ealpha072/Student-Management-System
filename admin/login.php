@@ -3,7 +3,7 @@
 <div class="row h-100 justify-content-center align-items-center">
   <div class="col-10 col-md-8 col-lg-4">
   <h3>Login</h3>
-    <form action="login.php" method="post">
+    <form action="config.php" method="post">
 
       <div class="form-group input-group mb-3">
         <div class="input-group-prepend">

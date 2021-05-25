@@ -25,9 +25,8 @@
         $username = $_POST["username"];
         $password = $_POST["password"];
         $sql1->execute(array($username, $password));
-        //$rows = $sql1->rowCount();
         $results = $sql1->fetchAll(PDO::FETCH_ASSOC);
-        echo var_dump($results);
+        
         if( $username===$results[0]['username'] && $password===$results[0]['password']){
             //set session variables
             $_SESSION['loggedin']=true;
