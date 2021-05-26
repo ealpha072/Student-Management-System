@@ -19,13 +19,13 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="#subjects" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Subject</a>
+                    <a href="#subjects" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Units</a>
                     <ul class="collapse list-unstyled" id="subjects">
                         <li>
-                            <a href="#">Add Subject</a>
+                            <a href="addunit.php">Add Units</a>
                         </li>
                         <li>
-                            <a href="#">View subjects</a>
+                            <a href="#">View Units</a>
                         </li>
                     </ul>
                 </li>
@@ -62,6 +62,7 @@
             </div>
             <h4>Welcome Admin</h4>
         </nav>
+        <hr>
         
 
     <!--</div>-->

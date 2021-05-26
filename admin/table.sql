@@ -14,3 +14,10 @@ CREATE TABLE `sms`.`courses` (
     `date_created` DATE NOT NULL DEFAULT CURRENT_TIMESTAMP , PRIMARY KEY (`id`)
 )
 ENGINE = InnoDB;
+
+CREATE TABLE `sms`.`units` ( 
+    `id` INT(10) NOT NULL AUTO_INCREMENT , 
+    `course_id` INT(10) NOT NULL , 
+    `unit_title` VARCHAR(100) NOT NULL , 
+    `unit_name` VARCHAR(100) NOT NULL , PRIMARY KEY (`id`)) 
+ENGINE = InnoDB;

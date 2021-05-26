@@ -16,6 +16,8 @@
     $sql1 = $conn->prepare("SELECT * FROM admin WHERE username =? AND password=?");
     $sql2 = $conn->prepare("INSERT INTO courses (short_name, full_name, date_created) VALUES (?, ?, ?)");
     $sql3 = $conn->prepare("SELECT * FROM courses");
+    $sql4 = $conn->prepare("INSERT INTO units(course_id, unit_title, unit_name) VALUE(?, ?, ?)");
+    $sql5 = $conn->prepare("SELECT id FROM courses WHERE full_name=?");
 
     if(isset($_POST['login']) && $_SERVER["REQUEST_METHOD"]=="POST"){ 
         login();
@@ -24,6 +26,11 @@
     if(isset($_POST["addcourse"]) && $_SERVER["REQUEST_METHOD"]=="POST"){
         addCourse();
     }
+
+    if(isset($_POST["addunit"]) && $_SERVER["REQUEST_METHOD"]=="POST"){
+        addUnit();
+    }
+
 
     //login code
     function login(){
@@ -55,8 +62,17 @@
         $sql2->execute(array($shortname, $fullname, $datecreated));
         header("location: addcourse.php");
     }
-
-    //view course code
     
+    function addUnit(){
+        global $sql4, $sql5;        
+        $course = $_POST["courses"];
+        $title = $_POST["unit-title"];
+        $name = $_POST["unit-name"];
+        $sql5->execute(array($course));
+        $results = $sql5->fetchAll(PDO::FETCH_ASSOC);
+        
+        //echo var_dump($results[0]["id"]);
+        $sql4->execute((array($results[0]["id"],$title,$name)));
+    }
 
 ?>
