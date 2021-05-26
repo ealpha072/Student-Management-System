@@ -19,6 +19,7 @@
     $sql4 = $conn->prepare("INSERT INTO units(course_id, unit_title, unit_name) VALUE(?, ?, ?)");
     $sql5 = $conn->prepare("SELECT id FROM courses WHERE full_name=?");
     $sql6 = $conn->prepare("SELECT * FROM units");
+    $sql7 = $conn->prepare("INSERT INTO schools (school_name, date_created) VALUES(?, ?)");
 
     if(isset($_POST['login']) && $_SERVER["REQUEST_METHOD"]=="POST"){ 
         login();
@@ -32,6 +33,9 @@
         addUnit();
     }
 
+    if(isset($_POST["addschool"]) && $_SERVER["REQUEST_METHOD"]=="POST"){
+        addschool();
+    }    
 
     //login code
     function login(){
@@ -74,4 +78,12 @@
         $sql4->execute((array($results[0]["id"],$title,$name)));
     }
 
+    function addschool(){
+        global $sql7;
+        $name = $_POST["schoolname"];
+        $datecreated = date('l\, F jS\, Y ');
+        $sql7->execute(array($name, $datecreated));
+
+        header("location:addschool.php");
+    }
 ?>

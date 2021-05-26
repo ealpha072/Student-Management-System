@@ -6,7 +6,10 @@
             <div class="sidebar-header">
                 <h3>School Management System</h3>
             </div>
+
+            <!--dashboard items-->
             <ul class="list-unstyled components">
+                <!--COURSES-->
                 <li class="active">
                     <a href="#courses" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Courses</a>
                     <ul class="collapse list-unstyled" id="courses">
@@ -18,6 +21,7 @@
                         </li>
                     </ul>
                 </li>
+                <!--UNITS-->
                 <li>
                     <a href="#subjects" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Units</a>
                     <ul class="collapse list-unstyled" id="subjects">
@@ -29,9 +33,10 @@
                         </li>
                     </ul>
                 </li>
+                <!--DEPARTMENTS-->
                 <li>
-                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Departments</a>
-                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                    <a href="#dpts" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Departments</a>
+                    <ul class="collapse list-unstyled" id="dpts">
                         <li>
                             <a href="#">Add Department</a>
                         </li>
@@ -40,9 +45,23 @@
                         </li>
                     </ul>
                 </li>
+                <!--SCHOOLS-->
+                <li>
+                    <a href="#schools" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Schools</a>
+                    <ul class="collapse list-unstyled" id="schools">
+                        <li>
+                            <a href="addschool.php">Add Schools</a>
+                        </li>
+                        <li>
+                            <a href="viewschools.php">View Schools</a>
+                        </li>
+                    </ul>
+                </li>
+                <!--REGISTER-->
                 <li>
                     <a href="#">Register Student</a>
                 </li>
+                <!--OTHERS-->
                 <li>
                     <a href="#">Contact</a>
                 </li>

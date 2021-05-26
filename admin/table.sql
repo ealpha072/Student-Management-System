@@ -21,3 +21,9 @@ CREATE TABLE `sms`.`units` (
     `unit_title` VARCHAR(100) NOT NULL , 
     `unit_name` VARCHAR(100) NOT NULL , PRIMARY KEY (`id`)) 
 ENGINE = InnoDB;
+
+CREATE TABLE `sms`.`schools` ( 
+    `id` INT(10) NOT NULL AUTO_INCREMENT , 
+    `school_name` INT(255) NOT NULL , 
+    `date_created` VARCHAR(100) NOT NULL , PRIMARY KEY (`id`)) 
+ENGINE = InnoDB;
