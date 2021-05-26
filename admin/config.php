@@ -70,8 +70,6 @@
         $name = $_POST["unit-name"];
         $sql5->execute(array($course));
         $results = $sql5->fetchAll(PDO::FETCH_ASSOC);
-        
-        //echo var_dump($results[0]["id"]);
         $sql4->execute((array($results[0]["id"],$title,$name)));
     }
 
