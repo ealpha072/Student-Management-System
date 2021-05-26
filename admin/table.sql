@@ -5,3 +5,12 @@ CREATE TABLE `sms`.`students` (
 `id_num` INT(100) NOT NULL , 
 `adm_date` DATE NOT NULL DEFAULT CURRENT_TIMESTAMP , PRIMARY KEY (`id`)) 
 ENGINE = InnoDB;
+
+
+CREATE TABLE `sms`.`courses` ( 
+    `id` INT(10) NOT NULL AUTO_INCREMENT , 
+    `short_name` VARCHAR(100) NOT NULL , 
+    `full_name` VARCHAR(100) NOT NULL , 
+    `date_created` DATE NOT NULL DEFAULT CURRENT_TIMESTAMP , PRIMARY KEY (`id`)
+)
+ENGINE = InnoDB;

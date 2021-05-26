@@ -14,9 +14,14 @@
     }
     //prepare statments
     $sql1 = $conn->prepare("SELECT * FROM admin WHERE username =? AND password=?");
-    
-    if(isset($_POST['login']) && $_SERVER["REQUEST_METHOD"]=="POST"){
+    $sql2 = $conn->prepare("INSERT INTO courses (short_name, full_name, date_created) VALUES (?, ?, ?)");
+
+    if(isset($_POST['login']) && $_SERVER["REQUEST_METHOD"]=="POST"){ 
         login();
+    }
+
+    if(isset($_POST["addcourse"]) && $_SERVER["REQUEST_METHOD"]=="POST"){
+        addCourse();
     }
 
     //login code
@@ -38,14 +43,15 @@
             echo "There was an error logging you in, check the credentials and try again";
         }
     }
-    
 
-    
-        
+    function addCourse(){
+        global $sql2;
+        $shortname = $_POST["shortname"];
+        $fullname = $_POST["fullname"];
+        $datecreated = date('l\, F jS\, Y ');
 
-
-
-
+        $sql2->execute(array($shortname, $fullname, $datecreated));
+    }
     
 
 ?>
