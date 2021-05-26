@@ -11,10 +11,10 @@
                     <a href="#courses" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Courses</a>
                     <ul class="collapse list-unstyled" id="courses">
                         <li>
-                            <a href="addcourse.php">Add Course</a>
+                            <a href="addcourse.php">Add Courses</a>
                         </li>
                         <li>
-                            <a href="#">View</a>
+                            <a href="viewcourse.php">View Courses</a>
                         </li>
                     </ul>
                 </li>

@@ -15,6 +15,7 @@
     //prepare statments
     $sql1 = $conn->prepare("SELECT * FROM admin WHERE username =? AND password=?");
     $sql2 = $conn->prepare("INSERT INTO courses (short_name, full_name, date_created) VALUES (?, ?, ?)");
+    $sql3 = $conn->prepare("SELECT * FROM courses");
 
     if(isset($_POST['login']) && $_SERVER["REQUEST_METHOD"]=="POST"){ 
         login();
@@ -44,6 +45,7 @@
         }
     }
 
+    //add course code
     function addCourse(){
         global $sql2;
         $shortname = $_POST["shortname"];
@@ -53,6 +55,8 @@
         $sql2->execute(array($shortname, $fullname, $datecreated));
         header("location: addcourse.php");
     }
+
+    //view course code
     
 
 ?>
