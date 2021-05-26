@@ -11,7 +11,7 @@
                     <a href="#courses" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Courses</a>
                     <ul class="collapse list-unstyled" id="courses">
                         <li>
-                            <a href="#">Add Course</a>
+                            <a href="addcourse.php">Add Course</a>
                         </li>
                         <li>
                             <a href="#">View</a>
@@ -55,15 +55,14 @@
     <div id="content">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
-
                 <button type="button" id="sidebarCollapse" class="btn btn-info">
                     <i class="fas fa-align-left"></i>
                     <span>Toggle Sidebar</span>
                 </button>
-
             </div>
         </nav>
-    </div>
-</div>
+
+    <!--</div>-->
+<!--</div>-->
 
 <?php require "../public/footer.php"?>
