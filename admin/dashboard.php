@@ -53,7 +53,7 @@
                             <a href="addschool.php">Add Schools</a>
                         </li>
                         <li>
-                            <a href="viewschools.php">View Schools</a>
+                            <a href="viewschool.php">View Schools</a>
                         </li>
                     </ul>
                 </li>
