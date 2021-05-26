@@ -42,6 +42,7 @@
                             <th scope="col">Short Name</th>
                             <th scope="col">Full Name</th>
                             <th scope="col">Date Created</th>
+                            <th scope="col" colspan="2" class="text-center">Action</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -51,6 +52,8 @@
                             <td><?php echo $course["short_name"]; ?></td>
                             <td><?php echo $course["full_name"]; ?></td>
                             <td><?php echo $course["date_created"]; ?></td>
+                            <td><a href="" class="link-primary"> Edit</a></td>
+                            <td><a href="" class="link-danger">Delete</a></td>
                         </tr>
                         <?php }?>
                     </tbody>
