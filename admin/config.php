@@ -51,6 +51,7 @@
         $datecreated = date('l\, F jS\, Y ');
 
         $sql2->execute(array($shortname, $fullname, $datecreated));
+        header("location: addcourse.php");
     }
     
 
