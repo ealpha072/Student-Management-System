@@ -4,7 +4,6 @@
 
     $sql3->execute();
     $results = $sql3->fetchAll(PDO::FETCH_ASSOC);
-
 ?>
 
 <div class="container">

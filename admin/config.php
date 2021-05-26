@@ -18,6 +18,7 @@
     $sql3 = $conn->prepare("SELECT * FROM courses");
     $sql4 = $conn->prepare("INSERT INTO units(course_id, unit_title, unit_name) VALUE(?, ?, ?)");
     $sql5 = $conn->prepare("SELECT id FROM courses WHERE full_name=?");
+    $sql6 = $conn->prepare("SELECT * FROM units");
 
     if(isset($_POST['login']) && $_SERVER["REQUEST_METHOD"]=="POST"){ 
         login();

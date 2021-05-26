@@ -25,7 +25,7 @@
                             <a href="addunit.php">Add Units</a>
                         </li>
                         <li>
-                            <a href="#">View Units</a>
+                            <a href="viewunits.php">View Units</a>
                         </li>
                     </ul>
                 </li>
