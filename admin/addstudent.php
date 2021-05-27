@@ -2,6 +2,12 @@
     require "dashboard.php";
     require "config.php";
 
+    $sql8->execute();
+    $sql3->execute();
+
+    $schools = $sql8->fetchAll(PDO::FETCH_ASSOC);
+    $courses = $sql3->fetchAll(PDO::FETCH_ASSOC);
+
 ?>
 
 <div class="container">
@@ -20,13 +26,25 @@
                         <div class="form-row">
                             <div class="col">
                                 <select name="school" id="" class="form-control" required>
-                                    <option value="" selected>Choose a school</option>
+                                    <option value="" selected disabled>Choose a school</option>
+                                    <?php foreach($schools as $school){?>
+                                        <option value="<?php echo $school["school_name"];?>"><?php echo $school["school_name"]?></option>
+                                    <?php } ?>
                                 </select>
                             </div>
                             <div class="col">
                                 <select name="school" id="" class="form-control" required>
-                                    <option value="" selected>Choose a course</option>
+                                    <option value="" selected disabled>Choose a course</option>
+                                    <?php foreach($courses as $course){?>
+                                        <option value="<?php echo $course["full_name"];?>"><?php echo $course["full_name"]?></option>
+                                    <?php } ?>
                                 </select>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col">
+                                <label for="regnum">Registration number</label>
+                                <input type="text" name="regnum" class="form-control" placeholder="Reg No...">                
                             </div>
                         </div>
                     </div>
@@ -55,7 +73,7 @@
                             <div class="col">
                                 <label for="gender">Gender</label>
                                 <select name="gender" class="form-control" required>
-                                    <option value="" selected>Choose a gender</option>
+                                    <option value="" selected disabled>Choose a gender</option>
                                     <option value="male">Male</option>
                                     <option value="female">Female</option>
                                     <option value="other">Other</option>
@@ -76,7 +94,7 @@
                             <div class="col">
                                 <label for="">Physically Challenged</label>
                                 <select name="disability" id="" class="form-control" required>
-                                    <option value="" selected>Choose a disability</option>
+                                    <option value="" selected disabled>Choose a disability</option>
                                     <option value="yes">Yes</option>
                                     <option value="no">No</option>                                    
                                 </select>
