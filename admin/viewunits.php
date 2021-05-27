@@ -19,6 +19,8 @@
                     <thead>
                         <tr>
                             <th scope="col">S No</th>
+                            <th scope="col">School</th>
+                            <th scope="col">Department</th>
                             <th scope="col">Unit Code</th>
                             <th scope="col">Unit title</th>
                             <th scope="col" colspan="2" class="text-center">Action</th>
@@ -27,7 +29,9 @@
                     <tbody>
                         <?php foreach($results as $unit){?>
                         <tr>
-                            <th scope="row"><?php echo $unit["id"]; ?></th>
+                            <th scope="row"><?php echo $unit["id"];?></th>
+                            <th scope="row"><?php echo $unit["school"];?></th>
+                            <th scope="row"><?php echo $unit["department"]; ?></th>
                             <td><?php echo $unit["unit_title"]; ?></td>
                             <td><?php echo $unit["unit_name"]; ?></td>
                             <td><a href="" class="link-primary"> Edit</a></td>

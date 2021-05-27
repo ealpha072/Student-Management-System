@@ -20,8 +20,8 @@
                         <tr>
                             <th scope="col">S No</th>
                             <th scope="col">School</th>
-                            <th scope="col">Short Name</th>
-                            <th scope="col">Full Name</th>
+                            <th scope="col">Course Abbr</th>
+                            <th scope="col">Course Name</th>
                             <th scope="col">Date Created</th>
                             <th scope="col" colspan="2" class="text-center">Action</th>
                         </tr>

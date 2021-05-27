@@ -22,6 +22,9 @@ CREATE TABLE `sms`.`units` (
     `unit_title` VARCHAR(100) NOT NULL , 
     `unit_name` VARCHAR(100) NOT NULL , PRIMARY KEY (`id`)) 
 ENGINE = InnoDB;
+ALTER TABLE `units` ADD `school` VARCHAR(255) NOT NULL AFTER `id`, ADD `department` VARCHAR(255) NOT NULL AFTER `school`;
+ALTER TABLE `units` DROP `course_id`;
+ALTER TABLE `units` ADD `course` VARCHAR(255) NOT NULL AFTER `department`;
 
 CREATE TABLE `sms`.`schools` ( 
     `id` INT(10) NOT NULL AUTO_INCREMENT , 

@@ -16,13 +16,14 @@
     $sql1 = $conn->prepare("SELECT * FROM admin WHERE username =? AND password=?");
     $sql2 = $conn->prepare("INSERT INTO courses (school,short_name, full_name, date_created) VALUES (?, ?, ?, ?)");
     $sql3 = $conn->prepare("SELECT * FROM courses");
-    $sql4 = $conn->prepare("INSERT INTO units(course_id, unit_title, unit_name) VALUES(?, ?, ?)");
-    $sql5 = $conn->prepare("SELECT id FROM courses WHERE full_name=?");
+    $sql4 = $conn->prepare("INSERT INTO units(school, department, unit_title, unit_name) VALUES(?, ?, ?, ?)");
+    //$sql5 = $conn->prepare("SELECT id FROM courses WHERE full_name=?");
     $sql6 = $conn->prepare("SELECT * FROM units");
     $sql7 = $conn->prepare("INSERT INTO schools (school_name, date_created) VALUES(?, ?)");
     $sql8 = $conn->prepare("SELECT * FROM schools");
     $sql9 = $conn->prepare("INSERT INTO departments(school, dpt_abbr, name) VALUES(? ,? ,?)");
     $sql10 = $conn->prepare("SELECT * FROM departments");
+    $sql11 = $conn->prepare("SELECT * FROM departments WHERE school=?");
 
     if(isset($_POST['login']) && $_SERVER["REQUEST_METHOD"]=="POST"){ 
         login();
@@ -77,13 +78,13 @@
     }
     
     function addUnit(){
-        global $sql4, $sql5;        
-        $course = $_POST["courses"];
+        global $sql4;
+        $school = $_POST["school"];
+        $dpt = $_POST["dpts"];
         $title = $_POST["unit-title"];
         $name = $_POST["unit-name"];
-        $sql5->execute(array($course));
-        $results = $sql5->fetchAll(PDO::FETCH_ASSOC);
-        $sql4->execute((array($results[0]["id"],$title,$name)));
+
+        $sql4->execute(array($school, $dpt, $title ,$name));
     }
 
     function addschool(){
