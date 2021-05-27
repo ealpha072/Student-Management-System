@@ -41,7 +41,7 @@
                             <a href="adddept.php">Add Department</a>
                         </li>
                         <li>
-                            <a href="#">View Departments</a>
+                            <a href="viewdepts.php">View Departments</a>
                         </li>
                     </ul>
                 </li>

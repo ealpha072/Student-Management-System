@@ -22,6 +22,7 @@
     $sql7 = $conn->prepare("INSERT INTO schools (school_name, date_created) VALUES(?, ?)");
     $sql8 = $conn->prepare("SELECT * FROM schools");
     $sql9 = $conn->prepare("INSERT INTO departments(school, dpt_abbr, name) VALUES(? ,? ,?)");
+    $sql10 = $conn->prepare("SELECT * FROM departments");
 
     if(isset($_POST['login']) && $_SERVER["REQUEST_METHOD"]=="POST"){ 
         login();
