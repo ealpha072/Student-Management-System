@@ -38,7 +38,7 @@
                     <a href="#dpts" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Departments</a>
                     <ul class="collapse list-unstyled" id="dpts">
                         <li>
-                            <a href="#">Add Department</a>
+                            <a href="adddept.php">Add Department</a>
                         </li>
                         <li>
                             <a href="#">View Departments</a>

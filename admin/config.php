@@ -16,11 +16,12 @@
     $sql1 = $conn->prepare("SELECT * FROM admin WHERE username =? AND password=?");
     $sql2 = $conn->prepare("INSERT INTO courses (school,short_name, full_name, date_created) VALUES (?, ?, ?, ?)");
     $sql3 = $conn->prepare("SELECT * FROM courses");
-    $sql4 = $conn->prepare("INSERT INTO units(course_id, unit_title, unit_name) VALUE(?, ?, ?)");
+    $sql4 = $conn->prepare("INSERT INTO units(course_id, unit_title, unit_name) VALUES(?, ?, ?)");
     $sql5 = $conn->prepare("SELECT id FROM courses WHERE full_name=?");
     $sql6 = $conn->prepare("SELECT * FROM units");
     $sql7 = $conn->prepare("INSERT INTO schools (school_name, date_created) VALUES(?, ?)");
     $sql8 = $conn->prepare("SELECT * FROM schools");
+    $sql9 = $conn->prepare("INSERT INTO departments(school, dpt_abbr, name) VALUES(? ,? ,?)");
 
     if(isset($_POST['login']) && $_SERVER["REQUEST_METHOD"]=="POST"){ 
         login();
@@ -36,7 +37,11 @@
 
     if(isset($_POST["addschool"]) && $_SERVER["REQUEST_METHOD"]=="POST"){
         addschool();
-    }    
+    } 
+    
+    if(isset($_POST["adddept"]) && $_SERVER["REQUEST_METHOD"]=="POST"){
+        addDept();
+    }
 
     //login code
     function login(){
@@ -87,5 +92,15 @@
         $sql7->execute(array($name, $datecreated));
 
         header("location:addschool.php");
+    }
+
+    function addDept(){
+        global $sql9;
+        $school = $_POST["school"];
+        $abbr = $_POST["dptcode"];
+        $name = $_POST["dptname"];
+
+        $sql9->execute(array($school, $abbr, $name));
+        header("location: adddept.php");
     }
 ?>

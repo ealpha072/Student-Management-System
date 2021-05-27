@@ -28,3 +28,11 @@ CREATE TABLE `sms`.`schools` (
     `school_name` INT(255) NOT NULL , 
     `date_created` VARCHAR(100) NOT NULL , PRIMARY KEY (`id`)) 
 ENGINE = InnoDB;
+
+CREATE TABLE `sms`. `departments`( 
+    `id` INT(100) NOT NULL AUTO_INCREMENT , 
+    `school` VARCHAR(255) NOT NULL , 
+    `dpt_abbr` VARCHAR(255) NOT NULL , 
+    `name` VARCHAR(255) NOT NULL , PRIMARY KEY (`id`)
+) 
+ENGINE = InnoDB;
