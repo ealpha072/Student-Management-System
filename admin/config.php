@@ -14,7 +14,7 @@
     }
     //prepare statments
     $sql1 = $conn->prepare("SELECT * FROM admin WHERE username =? AND password=?");
-    $sql2 = $conn->prepare("INSERT INTO courses (short_name, full_name, date_created) VALUES (?, ?, ?)");
+    $sql2 = $conn->prepare("INSERT INTO courses (school,short_name, full_name, date_created) VALUES (?, ?, ?, ?)");
     $sql3 = $conn->prepare("SELECT * FROM courses");
     $sql4 = $conn->prepare("INSERT INTO units(course_id, unit_title, unit_name) VALUE(?, ?, ?)");
     $sql5 = $conn->prepare("SELECT id FROM courses WHERE full_name=?");
@@ -61,11 +61,12 @@
     //add course code
     function addCourse(){
         global $sql2;
+        $school = $_POST["school"];
         $shortname = $_POST["shortname"];
         $fullname = $_POST["fullname"];
         $datecreated = date('l\, F jS\, Y ');
 
-        $sql2->execute(array($shortname, $fullname, $datecreated));
+        $sql2->execute(array($school, $shortname, $fullname, $datecreated));
         header("location: addcourse.php");
     }
     

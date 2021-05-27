@@ -19,6 +19,7 @@
                     <thead>
                         <tr>
                             <th scope="col">S No</th>
+                            <th scope="col">School</th>
                             <th scope="col">Short Name</th>
                             <th scope="col">Full Name</th>
                             <th scope="col">Date Created</th>
@@ -29,6 +30,7 @@
                         <?php foreach($results as $course){?>
                         <tr>
                             <th scope="row"><?php echo $course["id"]; ?></th>
+                            <td><?php echo $course["school"]; ?></td>
                             <td><?php echo $course["short_name"]; ?></td>
                             <td><?php echo $course["full_name"]; ?></td>
                             <td><?php echo $course["date_created"]; ?></td>

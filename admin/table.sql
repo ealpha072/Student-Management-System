@@ -14,6 +14,7 @@ CREATE TABLE `sms`.`courses` (
     `date_created` DATE NOT NULL DEFAULT CURRENT_TIMESTAMP , PRIMARY KEY (`id`)
 )
 ENGINE = InnoDB;
+ALTER TABLE `courses` ADD `school` VARCHAR(255) NOT NULL AFTER `id`;
 
 CREATE TABLE `sms`.`units` ( 
     `id` INT(10) NOT NULL AUTO_INCREMENT , 
