@@ -59,11 +59,19 @@
                 </li>
                 <!--REGISTER-->
                 <li>
-                    <a href="#">Register Student</a>
+                    <a href="#students" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Students</a>
+                    <ul class="collapse list-unstyled" id="students">
+                        <li>
+                            <a href="addstudent.php">Add new student</a>
+                        </li>
+                        <li>
+                            <a href="viewstudents.php">View students</a>
+                        </li>
+                    </ul>
                 </li>
                 <!--OTHERS-->
                 <li>
-                    <a href="#">Contact</a>
+                    <a href="login.php">Logout</a>
                 </li>
             </ul>
     </nav>

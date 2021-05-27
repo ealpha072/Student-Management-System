@@ -93,3 +93,7 @@ ul ul a {
 .wrapper #content {
     width: 100%;
 }
+
+.container .card form .card {
+    margin-bottom: 10px;
+}
