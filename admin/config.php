@@ -46,6 +46,10 @@
         addDept();
     }
 
+    if(isset($_POST["register"]) && $_SERVER["REQUEST_METHOD"]=="POST"){
+        addStudent();
+    }
+
     //login code
     function login(){
         global $sql1;
@@ -105,5 +109,27 @@
 
         $sql9->execute(array($school, $abbr, $name));
         header("location: adddept.php");
+    }
+
+    function addStudent(){
+        global $sql12;
+        $school = $_POST["school"];
+        $course = $_POST["course"];
+        $regnum = $_POST["regnum"];
+        $firstname = $_POST["firstname"];
+        $midname = $_POST["midname"];
+        $lastname = $_POST["lastname"];
+        $gender = $_POST["gender"];
+        $parent = $_POST["parent"];
+        $work = $_POST["work"];
+        $disability = $_POST["disability"];
+        $nationality = $_POST["nationality"];
+        $mobile = $_POST["mobile"];
+        $email = $_POST["email"];
+        $idnumber = $_POST["idnumber"];
+        $address = $_POST["address"];
+
+        $sql12->execute(array($school, $course, $regnum, $firstname, $midname, $lastname, $gender, 
+        $parent, $work, $disability, $nationality, $mobile, $email, $idnumber));
     }
 ?>

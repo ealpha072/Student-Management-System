@@ -16,7 +16,7 @@
             <h5>New Student</h5>
         </div>
         <div class="card-body">
-            <form action="" method="post">
+            <form action="addstudent.php" method="post">
 
                 <div class="card">
                     <div class="card-header">
@@ -33,7 +33,7 @@
                                 </select>
                             </div>
                             <div class="col">
-                                <select name="school" id="" class="form-control" required>
+                                <select name="course" id="" class="form-control" required>
                                     <option value="" selected disabled>Choose a course</option>
                                     <?php foreach($courses as $course){?>
                                         <option value="<?php echo $course["full_name"];?>"><?php echo $course["full_name"]?></option>
