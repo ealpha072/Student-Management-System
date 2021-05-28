@@ -25,6 +25,7 @@
                     <div class="card-body">
                         <div class="form-row">
                             <div class="col">
+                                <label for="school">School<sup>*</sup></label>
                                 <select name="school" id="" class="form-control" required>
                                     <option value="" selected disabled>Choose a school</option>
                                     <?php foreach($schools as $school){?>
@@ -33,6 +34,7 @@
                                 </select>
                             </div>
                             <div class="col">
+                                <label for="regnum">Course<sup>*</sup></label>
                                 <select name="course" id="" class="form-control" required>
                                     <option value="" selected disabled>Choose a course</option>
                                     <?php foreach($courses as $course){?>
@@ -43,7 +45,7 @@
                         </div>
                         <div class="form-row">
                             <div class="col">
-                                <label for="regnum">Registration number</label>
+                                <label for="regnum">Registration number<sup>*</sup></label>
                                 <input type="text" name="regnum" class="form-control" placeholder="Reg No...">                
                             </div>
                         </div>
@@ -57,21 +59,21 @@
                     <div class="card-body">
                         <div class="form-row">
                             <div class="col">
-                                <label for="">Fist Name</label>
+                                <label for="">Fist Name<sup>*</sup></label>
                                 <input type="text" class="form-control" placeholder="First Name" required name="firstname">
                             </div>
                             <div class="col">
-                                <label for="">Middle Name</label>
+                                <label for="">Middle Name<sup>*</sup></label>
                                 <input type="text" class="form-control" placeholder="Middle Name" required name="midname">
                             </div>
                         </div>
                         <div class="form-row">
                             <div class="col">
-                                <label for="">Last Name</label>
+                                <label for="">Last Name<sup>*</sup></label>
                                 <input type="text" class="form-control" placeholder="Last Name" required name="lastname">                               
                             </div>
                             <div class="col">
-                                <label for="gender">Gender</label>
+                                <label for="gender">Gender<sup>*</sup></label>
                                 <select name="gender" class="form-control" required>
                                     <option value="" selected disabled>Choose a gender</option>
                                     <option value="male">Male</option>
@@ -82,17 +84,17 @@
                         </div>
                         <div class="form-row">
                             <div class="col">
-                                <label for="">Parent/Gurdian Name</label>
+                                <label for="">Parent/Gurdian Name<sup>*</sup></label>
                                 <input type="text" class="form-control" placeholder="Gurdian/Parent Name" required name="parent">  
                             </div>
                             <div class="col">
-                                <label for="">Gurdian/Parent Occupation</label>
+                                <label for="">Gurdian/Parent Occupation<sup>*</sup></label>
                                 <input type="text" class="form-control" placeholder="Gurdian/Parent Occupation" required name="work">  
                             </div>
                         </div>
                         <div class="form-row">
                             <div class="col">
-                                <label for="">Physically Challenged</label>
+                                <label for="">Physically Challenged<sup>*</sup></label>
                                 <select name="disability" id="" class="form-control" required>
                                     <option value="" selected disabled>Choose a disability</option>
                                     <option value="yes">Yes</option>
@@ -100,7 +102,7 @@
                                 </select>
                             </div>
                             <div class="col">
-                                <label for="" class="">Nationality</label>
+                                <label for="" class="">Nationality<sup>*</sup></label>
                                 <input type="text" class="form-control" placeholder="Nationality" required name="nationality">
                             </div>
                         </div>
@@ -114,21 +116,21 @@
                     <div class="card-body">
                             <div class="form-row">
                                 <div class="col">
-                                    <label for="">Mobile Number</label>
+                                    <label for="">Mobile Number<sup>*</sup></label>
                                     <input type="number" placeholder="Phone Number" maxlength="10" minlength="10" class="form-control" required name="mobile">
                                 </div>
                                 <div class="col">
-                                    <label for="">Email Address</label>
+                                    <label for="">Email Address<sup>*</sup></label>
                                     <input type="email" placeholder="Email Address" class="form-control" required name="email">
                                 </div>
                             </div>
                             <div class="form-row">
                                 <div class="col">
-                                    <label for="">ID Number</label>
+                                    <label for="">ID Number<sup>*</sup></label>
                                     <input type="number" placeholder="Phone Number" maxlength="8" minlength="8" class="form-control" required name="idnumber">
                                 </div>
                                 <div class="col">
-                                    <label for="">Physical Address</label>
+                                    <label for="">Physical Address<sup>*</sup></label>
                                     <input type="text" placeholder="P.O.BOX" class="form-control" required name="address">
                                 </div>
                             </div>

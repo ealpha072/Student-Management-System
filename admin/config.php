@@ -112,25 +112,31 @@
         header("location: adddept.php");
     }
 
-    function addStudent(){
+    function addStudent(){        
         global $sql12;
+        $errors  = [];
+
         $school = $_POST["school"];
         $course = $_POST["course"];
-        $regnum = $_POST["regnum"];
-        $firstname = $_POST["firstname"];
-        $midname = $_POST["midname"];
-        $lastname = $_POST["lastname"];
+        $regnum =  trim(htmlspecialchars($_POST["regnum"]));
+        $firstname =  trim(htmlspecialchars($_POST["firstname"]));
+        $midname =  trim(htmlspecialchars($_POST["midname"]));
+        $lastname =  trim(htmlspecialchars($_POST["lastname"]));
         $gender = $_POST["gender"];
-        $parent = $_POST["parent"];
-        $work = $_POST["work"];
+        $parent =  trim(htmlspecialchars($_POST["parent"]));
+        $work =  trim(htmlspecialchars($_POST["work"]));
         $disability = $_POST["disability"];
-        $nationality = $_POST["nationality"];
-        $mobile = $_POST["mobile"];
-        $email = $_POST["email"];
-        $idnumber = $_POST["idnumber"];
-        $address = $_POST["address"];
+        $nationality =  trim(htmlspecialchars($_POST["nationality"]));
+        $mobile = trim(htmlspecialchars($_POST["mobile"]));
+        $email = trim(htmlspecialchars($_POST["email"]));
+        $idnumber =trim(htmlspecialchars($_POST["idnumber"]));
 
+        //FILTER NAMES
+
+        
         $sql12->execute(array($school, $course, $regnum, $firstname, $midname, $lastname, $gender, 
         $parent, $work, $disability, $nationality, $mobile, $email, $idnumber));
+
+        
     }
 ?>
