@@ -97,3 +97,7 @@ ul ul a {
 .container .card form .card {
     margin-bottom: 10px;
 }
+
+sup {
+    color: red;
+}
