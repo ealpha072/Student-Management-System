@@ -25,6 +25,7 @@
     $sql10 = $conn->prepare("SELECT * FROM departments");
     $sql11 = $conn->prepare("SELECT * FROM departments WHERE school=?");
     $sql12 = $conn->prepare("INSERT INTO students(school,course,reg_num, first_name, mid_name, last_name, gender, parent_name, parent_work, disabled, nationality, phone_num, email, id_num) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?)");
+    $sql13 = $conn->prepare("SELECT * FROM students");
 
     if(isset($_POST['login']) && $_SERVER["REQUEST_METHOD"]=="POST"){ 
         login();

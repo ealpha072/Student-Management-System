@@ -30,8 +30,8 @@
                         <?php foreach($results as $unit){?>
                         <tr>
                             <th scope="row"><?php echo $unit["id"];?></th>
-                            <th scope="row"><?php echo $unit["school"];?></th>
-                            <th scope="row"><?php echo $unit["department"]; ?></th>
+                            <td><?php echo $unit["school"];?></td>
+                            <td><?php echo $unit["department"]; ?></td>
                             <td><?php echo $unit["unit_title"]; ?></td>
                             <td><?php echo $unit["unit_name"]; ?></td>
                             <td><a href="" class="link-primary"> Edit</a></td>
