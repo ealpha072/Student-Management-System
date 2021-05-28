@@ -132,11 +132,21 @@
         $idnumber =trim(htmlspecialchars($_POST["idnumber"]));
 
         //FILTER NAMES
+        if(!preg_match('/^[a-zA-Z\s]+$/',$firstname) || !preg_match('/^[a-zA-Z\s]+$/',$midname) || !preg_match('/^[a-zA-Z\s]+$/',$lastname)){
+            $nameError ="Invalid name format, name should only contain letters";
+            array_push($errors, $nameError);
+        }
 
-        
-        $sql12->execute(array($school, $course, $regnum, $firstname, $midname, $lastname, $gender, 
-        $parent, $work, $disability, $nationality, $mobile, $email, $idnumber));
+        //filter email
+        if(!filter_var($email, FILTER_VALIDATE_EMAIL)){
+            $emailError ="Invalid email format";
+            array_push($errors, $emailError);
+        }
 
+        if(count($errors)==0){
+            $sql12->execute(array($school, $course, $regnum, $firstname, $midname, $lastname, $gender, 
+            $parent, $work, $disability, $nationality, $mobile, $email, $idnumber));
+        }
         
     }
 ?>
