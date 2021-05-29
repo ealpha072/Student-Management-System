@@ -1,14 +1,9 @@
 <?php 
     require "dashboard.php";
     require "config.php";
+    $sql3->execute();
+    $results = $sql3->fetchAll(PDO::FETCH_ASSOC);
     
-    
-
-    if(isset($_POST["schoolsort"])){
-        $results = $sql3->fetchAll(PDO::FETCH_ASSOC);
-    }else{
-        $sql3->execute();
-    }
 
     
 ?>
