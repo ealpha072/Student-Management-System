@@ -1,9 +1,16 @@
 <?php 
     require "dashboard.php";
     require "config.php";
+    
+    
 
-    $sql3->execute();
-    $results = $sql3->fetchAll(PDO::FETCH_ASSOC);
+    if(isset($_POST["schoolsort"])){
+        $results = $sql3->fetchAll(PDO::FETCH_ASSOC);
+    }else{
+        $sql3->execute();
+    }
+
+    
 ?>
 
 <div class="container">
@@ -12,7 +19,28 @@
             <h5>View Courses</h5>
         </div>
         <div class="card-body">
-            <?php require "../public/forms.php"?>
+            <div class="form">
+                <div class="limit" style="float: left;">
+                    <form action="" class="form-inline">
+                        <div class="form-group">
+                            <label for="inputPassword6">Show
+                                <input type="number" class="form-control mx-sm-3" min="1" max="<?php echo count($results)?>">entries
+                            </label>
+                        </div>
+                    </form>
+                </div>
+                
+                <div class="search" style="float:right">
+                    <form class="form-inline" action="">
+                        <div class="input-group mb-3">
+                            <select name="sort" id="" class="form-control">
+                                <option value="" selected disabled>Sort by</option>
+                                <option value=""><button name="schoolsort">School</button></option>
+                            </select>
+                        </div>
+                    </form>
+                </div>                
+            </div>
 
             <div class="table">
                 <table class="table table-striped table-bordered">
