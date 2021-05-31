@@ -2,10 +2,7 @@
     require "dashboard.php";
     require "config.php";
     $sql3->execute();
-    $results = $sql3->fetchAll(PDO::FETCH_ASSOC);
-    
-
-    
+    $results = $sql3->fetchAll(PDO::FETCH_ASSOC);    
 ?>
 
 <div class="container">
