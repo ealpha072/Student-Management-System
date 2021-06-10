@@ -26,7 +26,7 @@
                 
                 <div class=" search" style="float:left">
 					<select name="" id="" class="form-control">
-						<option value="" selected disabled>Select a sort method</option>
+						<option value="" selected disabled>View by school</option>
 						<?php foreach($schools as $school){?>
 						<option value="<?php echo $school["school_name"];?>"><?php echo $school["school_name"];?></option>
 						<?php }?>
@@ -34,7 +34,7 @@
                 </div>                
             </div>
 
-            <div class="table">
+            <div class="table" id="coursetable">
                 <table class="table table-striped table-bordered">
                     <thead>
                         <tr>
@@ -62,5 +62,6 @@
                 </table>
             </div>           
         </div>
-    </div>
+    </div>	
 </div>
+<script src="scripts/script.js"></script>
