@@ -1,7 +1,7 @@
 function showCourse() {
     var myDiv = document.getElementById("coursetable");
 
-    console.log(schoolOption.childNodes)
+    //console.log(schoolOption.childNodes)
     var request;
     try {
         request = new XMLHttpRequest;
