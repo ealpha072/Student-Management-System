@@ -29,3 +29,12 @@
 
     }
 ?>
+
+<form class="form-inline" action="">
+                        <div class="input-group mb-3">
+                            <select name="sort" id="" class="form-control">
+                                <option value="" selected disabled>Sort by</option>
+                                <option value=""><button name="schoolsort">School</button></option>
+                            </select>
+                        </div>
+                    </form>
