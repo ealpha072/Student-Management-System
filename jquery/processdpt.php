@@ -7,7 +7,7 @@ $results = $query->fetchAll(PDO::FETCH_ASSOC);
 
 //echo var_dump($results);
 echo "<table class = \"table table-striped table-bordered\">";
- echo  "<caption>Departments-->" .$schoolName. "</caption>
+ echo  "<caption>Departments >>>" .$schoolName. "</caption>
     <thead>
         <tr>
             <th scope=col>S No</th>
