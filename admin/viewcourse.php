@@ -1,6 +1,7 @@
 <?php 
     require "dashboard.php";
     require "config.php";
+    
     $sql3->execute();
 	$sql8->execute();
     $results = $sql3->fetchAll(PDO::FETCH_ASSOC); 
@@ -25,7 +26,7 @@
                 </div>
                 
                 <div class=" search" style="float:left">
-					<select name="" id="schooloption" class="form-control" onchange="showCourse()">
+					<select name="school" id="schooloption" class="form-control" onchange="showCourse()">
 						<option value="" selected disabled>View by school</option>
 						<?php foreach($schools as $school){?>
 						<option value="<?php echo $school["school_name"];?>"><?php echo $school["school_name"];?></option>

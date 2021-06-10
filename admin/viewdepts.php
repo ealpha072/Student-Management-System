@@ -1,9 +1,12 @@
 <?php 
     require "dashboard.php";
     require "config.php";
-
+    //executions
+    $sql8->execute();
     $sql10->execute();
+    //results
     $results = $sql10->fetchAll(PDO::FETCH_ASSOC);
+    $schools = $sql8->fetchAll(PDO::FETCH_ASSOC);
 ?>
 
 <div class="container">
@@ -12,9 +15,29 @@
             <h5>View Departments</h5>
         </div>
         <div class="card-body">
-            <?php require "../public/forms.php"?>
+            
+            <div class="form">
+                <div class="limit" style="float: right;">
+                    <form action="" class="form-inline">
+                        <div class="form-group">
+                            <label for="inputPassword6">Show
+                                <input type="number" class="form-control mx-sm-3" min="1" max="<?php echo count($results)?>">entries
+                            </label>
+                        </div>
+                    </form>
+                </div>
+                
+                <div class="search" style="float:left">
+                    <select name="school" id="schooloption" class="form-control" onchange="showDepartment()">
+                        <option value="" selected disabled>View by school</option>
+						<?php foreach($schools as $school){?>
+						<option value="<?php echo $school["school_name"];?>"><?php echo $school["school_name"];?></option>
+						<?php }?>
+                    </select>
+                </div>                
+            </div>
 
-            <div class="table">
+            <div class="table" id="depttable">
                 <table class="table table-striped table-bordered">
                     <thead>
                         <tr>
@@ -42,3 +65,4 @@
         </div>
     </div>
 </div>
+<script src="scripts/jqdept.js"></script>
