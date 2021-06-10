@@ -2,7 +2,9 @@
     require "dashboard.php";
     require "config.php";
     $sql3->execute();
-    $results = $sql3->fetchAll(PDO::FETCH_ASSOC);    
+	$sql8->execute();
+    $results = $sql3->fetchAll(PDO::FETCH_ASSOC); 
+	$schools = $sql8->fetchAll(PDO::FETCH_ASSOC);
 ?>
 
 <div class="container">
@@ -12,7 +14,7 @@
         </div>
         <div class="card-body">
             <div class="form">
-                <div class="limit" style="float: left;">
+                <div class="limit" style="float: right;">
                     <form action="" class="form-inline">
                         <div class="form-group">
                             <label for="inputPassword6">Show
@@ -22,15 +24,13 @@
                     </form>
                 </div>
                 
-                <div class="search" style="float:right">
-                    <form class="form-inline" action="">
-                        <div class="input-group mb-3">
-                            <select name="sort" id="" class="form-control">
-                                <option value="" selected disabled>Sort by</option>
-                                <option value=""><button name="schoolsort">School</button></option>
-                            </select>
-                        </div>
-                    </form>
+                <div class=" search" style="float:left">
+					<select name="" id="" class="form-control">
+						<option value="" selected disabled>Select a sort method</option>
+						<?php foreach($schools as $school){?>
+						<option value="<?php echo $school["school_name"];?>"><?php echo $school["school_name"];?></option>
+						<?php }?>
+					</select>
                 </div>                
             </div>
 
