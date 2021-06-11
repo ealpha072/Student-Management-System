@@ -1,5 +1,5 @@
 <?php
-    session_start();
+    //session_start();
     //connect to a database
     $dsn = "mysql:host=localhost;dbname=sms;charset=utf8mb4";
     $password = "";
