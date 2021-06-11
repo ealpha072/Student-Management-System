@@ -1,6 +1,6 @@
 <?php 
     require "dashboard.php";
-    require "config.php";
+    //require "config.php";
     
     $sql8->execute();
     $results = $sql8->fetchAll(PDO::FETCH_ASSOC);

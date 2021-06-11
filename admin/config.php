@@ -61,8 +61,7 @@
         $sql1->execute(array($username, $password));
         $results = $sql1->fetchAll(PDO::FETCH_ASSOC);
 
-        if($username ===''){
-            //echo "Error logging you in, please check your credentials and try again";
+        if($username ==='' || $password===''){
             exit("Error logging you in, please check your credentials and try again");
         }
         
@@ -156,4 +155,5 @@
         }
         
     }
+    //session_unset();
 ?>

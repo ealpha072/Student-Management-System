@@ -1,12 +1,11 @@
-<?php 
-    require "../public/header.php";
-    
-    if(!isset($_SESSION['loggedin'])){
+<?php
+    require "config.php"; 
+
+    /*if(!isset($_SESSION['loggedin'])){
         $_SESSION['msg']= "You must be logged in";
         header("location:login.php");
-    }
-        
-
+    }*/
+    require "../public/header.php";
 ?>
 
 <div class="wrapper">
@@ -93,7 +92,7 @@
                     <span>Toggle Sidebar</span>
                 </button>
             </div>
-            <h4>Welcome Admin</h4>
+            <h4><?php echo $_SESSION["msg"]; ?></h4>
         </nav>
         <hr>
         
