@@ -12,7 +12,26 @@
             <h5>View Units</h5>
         </div>
         <div class="card-body">
-            <?php require "../public/forms.php"?>
+            <div class="form">
+                <div class="limit" style="float: right;">
+                    <form action="" class="form-inline">
+                        <div class="form-group">
+                            <label for="inputPassword6">Show
+                                <input type="number" class="form-control mx-sm-3" min="1" max="<?php echo count($results)?>">entries
+                            </label>
+                        </div>
+                    </form>
+                </div>
+                
+                <div class="search" style="float:left">
+                    <select name="school" id="schooloption" class="form-control">
+						<option value="" selected disabled>View by school</option>
+						<?php foreach($schools as $school){?>
+						<option value="<?php echo $school["school_name"];?>"><?php echo $school["school_name"];?></option>
+						<?php }?>
+					</select>
+                </div>                
+            </div>
 
             <div class="table">
                 <table class="table table-striped table-bordered">
