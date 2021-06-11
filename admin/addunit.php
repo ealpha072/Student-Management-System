@@ -21,7 +21,7 @@
                 <div class="form-group row">
                     <label for="school" class="col-sm-2 col-form-label col-form-label">School</label>
                     <div class="col-sm-10">
-                        <select name="school" id="" class="form-control form-control">
+                        <select name="school" id="schoolselect" class="form-control form-control">
                             <option value="" selected disabled>Choose a school</option>
                             <?php foreach($schools as $school){?>
                                 <option value="<?php echo $school["school_name"];?>"><?php echo $school["school_name"]?></option>
@@ -33,7 +33,7 @@
                 <div class="form-group row">
                     <label for="departments" class="col-sm-2 col-form-label col-form-label">Departments</label>
                     <div class="col-sm-10">
-                        <select name="dpts" id="" class="form-control form-control">
+                        <select name="dpts" id="dptselect" class="form-control form-control">
                             <option value="" selected disabled>Choose a Department</option>                                                              
                             <?php 
                                 
