@@ -26,7 +26,7 @@
                         <div class="form-row">
                             <div class="col">
                                 <label for="school">School<sup>*</sup></label>
-                                <select name="school" id="" class="form-control" required>
+                                <select name="school" id="schoolselect" class="form-control" required onchange="populateCourse()">
                                     <option value="" selected disabled>Choose a school</option>
                                     <?php foreach($schools as $school){?>
                                         <option value="<?php echo $school["school_name"];?>"><?php echo $school["school_name"]?></option>
@@ -35,12 +35,15 @@
                             </div>
                             <div class="col">
                                 <label for="regnum">Course<sup>*</sup></label>
-                                <select name="course" id="" class="form-control" required>
-                                    <option value="" selected disabled>Choose a course</option>
-                                    <?php foreach($courses as $course){?>
-                                        <option value="<?php echo $course["full_name"];?>"><?php echo $course["full_name"]?></option>
-                                    <?php } ?>
-                                </select>
+                                <div id="course-select">
+                                    <select name="course" id="" class="form-control" required>
+                                        <option value="" selected disabled>Choose a course</option>
+                                        <?php foreach($courses as $course){?>
+                                            <option value="<?php echo $course["full_name"];?>"><?php echo $course["full_name"]?></option>
+                                        <?php } ?>
+                                    </select>
+                                </div>
+                                
                             </div>
                         </div>
                         <div class="form-row">
@@ -143,3 +146,4 @@
         </div>
     </div>
 </div>
+<script src="scripts/studentcoursereq.js"></script>
