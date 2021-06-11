@@ -1,4 +1,13 @@
-<?php require "../public/header.php"; ?>
+<?php 
+    require "../public/header.php";
+    
+    if(!isset($_SESSION['loggedin'])){
+        $_SESSION['msg']= "You must be logged in";
+        header("location:login.php");
+    }
+        
+
+?>
 
 <div class="wrapper">
     <!-- Sidebar -->

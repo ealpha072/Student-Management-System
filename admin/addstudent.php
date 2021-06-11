@@ -130,7 +130,7 @@
                             <div class="form-row">
                                 <div class="col">
                                     <label for="">ID Number<sup>*</sup></label>
-                                    <input type="number" placeholder="Phone Number" maxlength="8" minlength="8" class="form-control" required name="idnumber">
+                                    <input type="number" placeholder="Phone Number" maxlength="8" minlength="8" class="form-control" required name="idnumber" min="0">
                                 </div>
                                 <div class="col">
                                     <label for="">Physical Address<sup>*</sup></label>

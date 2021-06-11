@@ -1,4 +1,5 @@
 <?php
+    session_start();
     //connect to a database
     $dsn = "mysql:host=localhost;dbname=sms;charset=utf8mb4";
     $password = "";
@@ -59,6 +60,11 @@
         $password = $_POST["password"];
         $sql1->execute(array($username, $password));
         $results = $sql1->fetchAll(PDO::FETCH_ASSOC);
+
+        if($username ===''){
+            //echo "Error logging you in, please check your credentials and try again";
+            exit("Error logging you in, please check your credentials and try again");
+        }
         
         if( $username===$results[0]['username'] && $password===$results[0]['password']){
             //set session variables
