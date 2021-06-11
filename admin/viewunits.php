@@ -3,6 +3,8 @@
     require "config.php";
 
     $sql6->execute();
+    $sql8->execute();
+    $schools = $sql8->fetchAll(PDO::FETCH_ASSOC);
     $results = $sql6->fetchAll(PDO::FETCH_ASSOC);
 ?>
 
@@ -42,7 +44,6 @@
                             <th scope="col">Department</th>
                             <th scope="col">Unit Code</th>
                             <th scope="col">Unit title</th>
-                            <th scope="col" colspan="2" class="text-center">Action</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -53,8 +54,6 @@
                             <td><?php echo $unit["department"]; ?></td>
                             <td><?php echo $unit["unit_title"]; ?></td>
                             <td><?php echo $unit["unit_name"]; ?></td>
-                            <td><a href="" class="link-primary"> Edit</a></td>
-                            <td><a href="" class="link-danger">Delete</a></td>
                         </tr>
                         <?php }?>
                     </tbody>

@@ -20,7 +20,6 @@
                             <th scope="col">S No</th>
                             <th scope="col">Name of School</th>
                             <th scope="col">Date created</th>
-                            <th scope="col" colspan="2" class="text-center">Action</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -29,8 +28,6 @@
                             <th scope="row"><?php echo $school["id"]; ?></th>
                             <td><?php echo $school["school_name"]; ?></td>
                             <td><?php echo $school["date_created"]; ?></td>
-                            <td><a href="" class="link-primary"> Edit</a></td>
-                            <td><a href="" class="link-danger">Delete</a></td>
                         </tr>
                         <?php }?>
                     </tbody>

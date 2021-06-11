@@ -45,7 +45,7 @@
                             <th scope="col">School</th>
                             <th scope="col">Code</th>
                             <th scope="col">Department Name</th>
-                            <th scope="col" colspan="2" class="text-center">Action</th>
+                            
                         </tr>
                     </thead>
                     <tbody>
@@ -55,8 +55,7 @@
                             <td><?php echo $dpt["school"]; ?></td>
                             <td><?php echo $dpt["dpt_abbr"]; ?></td>
                             <td><?php echo $dpt["name"]; ?></td>
-                            <td><a href="" class="link-primary"> Edit</a></td>
-                            <td><a href="" class="link-danger">Delete</a></td>
+                            
                         </tr>
                         <?php }?>
                     </tbody>
