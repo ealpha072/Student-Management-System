@@ -8,3 +8,10 @@ A student management system with admin section. The admin can add units, courses
 * Ajax - for sending requests to servers
 * Bootstrap - for page styling 
 * Javascript - for making pages dynamic
+
+## Admin capabilities
+* View and add units
+* View and add departments
+* View and add courses
+* View and add schools
+* Edit and delete students, courses, units, departments
