@@ -15,3 +15,6 @@ A student management system with admin section. The admin can add units, courses
 * View and add courses
 * View and add schools
 * Edit and delete students, courses, units, departments
+## To do
+* Add a user section that can view enrolled courses
+* Implement site security to prevent SQL injections
