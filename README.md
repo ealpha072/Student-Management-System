@@ -5,6 +5,7 @@ In this php project, i create a student management application that can be used 
 * View and add units,deartments, schools, students and courses
 * Edit and delete students, courses, units, departments
 * He can perform CRUD operations on all the above items
+
 The student section will be implemented later with features such as viewing units and school details...
 
 ## Project File structure;
