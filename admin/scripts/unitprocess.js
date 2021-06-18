@@ -15,7 +15,7 @@ function showUnit() {
     }
     var school = document.getElementById("schoolselect").value;
     var query = "?school=" + school;
-    request.open("GET", "../ajaxfiles/processunit.php" + query, true);
+    request.open("GET", "../jquery/processunit.php" + query, true);
     request.send(null)
 
 }

@@ -19,7 +19,7 @@ function showCourse() {
 
     var schoolOption = document.getElementById("schooloption").value;
     var query = "?schoolname=" + schoolOption;
-    request.open("GET", "../ajaxfiles/processcourse.php" + query, true);
+    request.open("GET", "../jquery/processcourse.php" + query, true);
     request.send(null);
 
 }
