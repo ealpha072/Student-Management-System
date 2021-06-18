@@ -1,12 +1,13 @@
 # student-management-system
 
-## Project Description
+## Project Description;
 In this php project, i create a student management application that can be used to manage a college or university or just any institution. The application so far has a complete admin section with a student section coming soon. The admin can do a variety of things as he traverses the application. His abilities are:
 * View and add units,deartments, schools, students and courses
 * Edit and delete students, courses, units, departments
 * He can perform CRUD operations on all the above items
+The student section will be implemented later with features such as viewing units and school details...
 
-## File structure
+## Project File structure;
 * admin - This directory contains admin pages and utilities only specific to admin
     * scripts - This sub-directory contains js files for ajax queries usefull in the admin section
     * others  - The other files in admin are generally the web pages to be opened depending on what is clicked.
@@ -14,7 +15,7 @@ In this php project, i create a student management application that can be used 
 * public - This folder contains shared or common resources between the admin and user
 * test - This contains css and js file that dictates how all the pages are rendered. They contain the styling and working of the sidebar navigation
 
-## Technologies used
+## Technologies used;
 * php - This was used as the main language for development of this application and it generally dictates the page rendering
 * XAMMP - This was used as a local server since PHP can't interprated by the normal browser
 * SQL - SQL was used as a database query language to communicate and retrive infomation from the database
@@ -23,7 +24,11 @@ In this php project, i create a student management application that can be used 
 * Bootstrap - This was generally used for responsive web development and web page styling. 
 * Javascript - This was used to make the user side of the application dynamic
 
-## Admin capabilities
+## How it works.
+The admin has to login to access the dashboard page. To login, username = alpha, password = alpha.
+After login, the page directs to dashboard.php where the admin can do a number of series. The sidebar menu can be toggled to have different views. Each item on the sidebar menu redirects to a different page within the application. The courses, units and departments can be viewed per school or as a whole. When viewed per school, the school has to be selected; a request is then sent to the correct backend page in the ajaxfiles directory. A response is then sent back and the appropriate div is populated with the response of the request.
+
+For the add unit page, the admin first selects the school where the unit will belong. Once school is selected, the course select tag is populated with courses related to the selected school. The admin can the go on to enter other information about the unit and submit it. 
 
 ## To do
 * Add a user section that can view enrolled courses
