@@ -15,6 +15,6 @@ function populateCourse() {
     }
     var school = document.getElementById("schoolselect").value;
     var queryString = "?school=" + school;
-    request.open("GET", "../jquery/studentcourse.php" + queryString, true);
+    request.open("GET", "../ajaxfiles/studentcourse.php" + queryString, true);
     request.send(null);
 }
