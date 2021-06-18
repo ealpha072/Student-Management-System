@@ -1,3 +1,0 @@
-1.In this project, we start with a login page for administrator.
-    -Create a database names students
-2.Write the code for loging in
