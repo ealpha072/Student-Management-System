@@ -1,3 +1,4 @@
+
 CREATE TABLE `sms`.`students` ( 
 `id` INT(100) NOT NULL AUTO_INCREMENT , 
 `name` VARCHAR(255) NOT NULL , 

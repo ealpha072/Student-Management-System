@@ -21,6 +21,15 @@
                         <li>
                             <a href="viewcourse.php">View Courses</a>
                         </li>
+                        <li>
+                            <a href="#manage-course" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Manage Courses</a>
+                            <ul class="collapse list-unstyled" id="manage-course">
+                                <li>
+                                    <a href="">Edit course details</a>
+                                    <a href="">Delete Course</a>
+                                </li>
+                            </ul>
+                        </li>
                     </ul>
                 </li>
                 <!--UNITS-->
@@ -32,6 +41,15 @@
                         </li>
                         <li>
                             <a href="viewunits.php">View Units</a>
+                        </li>
+                        <li>
+                            <a href="#manage-unit" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Manage unit</a>
+                            <ul class="collapse list-unstyled" id="manage-unit">
+                                <li>
+                                    <a href="">Edit unit details</a>
+                                    <a href="">Delete unit</a>
+                                </li>
+                            </ul>
                         </li>
                     </ul>
                 </li>
@@ -45,6 +63,15 @@
                         <li>
                             <a href="viewdepts.php">View Departments</a>
                         </li>
+                        <li>
+                            <a href="#manage-dpt" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Manage Departments</a>
+                            <ul class="collapse list-unstyled" id="manage-dpt">
+                                <li>
+                                    <a href="">Edit Department details</a>
+                                    <a href="">Delete department</a>
+                                </li>
+                            </ul>
+                        </li>
                     </ul>
                 </li>
                 <!--SCHOOLS-->
@@ -57,6 +84,15 @@
                         <li>
                             <a href="viewschool.php">View Schools</a>
                         </li>
+                        <li>
+                            <a href="#manage-school" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Manage schools</a>
+                            <ul class="collapse list-unstyled" id="manage-school">
+                                <li>
+                                    <a href="">Edit school details</a>
+                                    <a href="">Delete school</a>
+                                </li>
+                            </ul>
+                        </li>
                     </ul>
                 </li>
                 <!--REGISTER-->
@@ -68,6 +104,15 @@
                         </li>
                         <li>
                             <a href="viewstudents.php">View students</a>
+                        </li>
+                        <li>
+                            <a href="#manage-student" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Manage students</a>
+                            <ul class="collapse list-unstyled" id="manage-student">
+                                <li>
+                                    <a href="">Edit student details</a>
+                                    <a href="">Delete student</a>
+                                </li>
+                            </ul>
                         </li>
                     </ul>
                 </li>
