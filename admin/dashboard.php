@@ -24,7 +24,7 @@
                             <a href="viewcourse.php">View Courses</a>
                         </li>
                         <li>
-                            <a href="manage/courses.php">Manage Courses</a>
+                            <a href="managecourses.php">Manage Courses</a>
                         </li>
                     </ul>
                 </li>
@@ -39,7 +39,7 @@
                             <a href="viewunits.php">View Units</a>
                         </li>
                         <li>
-                            <a href="manage/units.php" >Manage unit</a>
+                            <a href="manageunits.php" >Manage unit</a>
                             
                         </li>
                     </ul>
@@ -55,7 +55,7 @@
                             <a href="viewdepts.php">View Departments</a>
                         </li>
                         <li>
-                            <a href="manage/department.php">Manage Departments</a>
+                            <a href="managedepartment.php">Manage Departments</a>
                     
                         </li>
                     </ul>
@@ -71,7 +71,7 @@
                             <a href="viewschool.php">View Schools</a>
                         </li>
                         <li>
-                            <a href="manage/schools.php">Manage schools</a>
+                            <a href="manageschools.php">Manage schools</a>
                             
                         </li>
                     </ul>
@@ -87,7 +87,7 @@
                             <a href="viewstudents.php">View students</a>
                         </li>
                         <li>
-                            <a href="manage/students.php" >Manage students</a>
+                            <a href="managestudents.php" >Manage students</a>
                         
                         </li>
                     </ul>
