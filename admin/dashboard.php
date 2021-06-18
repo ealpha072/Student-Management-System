@@ -6,7 +6,9 @@
     <!-- Sidebar -->
     <nav id="sidebar">
             <div class="sidebar-header">
-                <h3>School Management System</h3>
+                <h3>School System</h3>
+                <img src="images/avatar.png" alt="">
+                <h5>Admin</h5>
             </div>
 
             <!--dashboard items-->
