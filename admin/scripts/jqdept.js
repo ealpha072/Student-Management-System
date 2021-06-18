@@ -17,7 +17,7 @@ function showDepartment() {
 
     var schoolOption = document.getElementById("schooloption").value;
     var query = "?schoolname=" + schoolOption;
-    request.open("GET", "../jquery/processdpt.php" + query, true);
+    request.open("GET", "../ajaxfiles/processdpt.php" + query, true);
     request.send(null);
 
 }
