@@ -7,7 +7,7 @@ function showCourse() {
         request = new XMLHttpRequest;
 
     } catch (error) {
-        alert("Ypur browser doesnt support AJAX!!")
+        alert("Your browser doesn't support AJAX!!")
     }
 
     request.onreadystatechange = function() {
