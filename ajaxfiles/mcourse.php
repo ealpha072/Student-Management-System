@@ -22,8 +22,8 @@ echo "<table class = \"table table-striped table-bordered\">";
                 echo "<td>".$row["id"] . "</td>";
                 echo "<td>".$row["short_name"] . "</td>";
                 echo "<td>".$row["full_name"] . "</td>";
-                echo "<td><a href=\"\" class=\"link-success\">Edit<a/></td>";
-                echo "<td><a href=\"\" class=\"link-danger\">Delete</a></td>";
+                echo "<td><a href=\"\" class=\"link-primary\"><i class=\"fas fa-edit\"></i>Edit<a/></td>";
+                echo "<td><a href=\"\" class=\"link-primary\"><i class=\"fas fa-delete\"></i>Delete</a></td>";
 
             echo "</tr>";
         }
