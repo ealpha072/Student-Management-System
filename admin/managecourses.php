@@ -21,10 +21,10 @@
                     </select>
                 </div>                
             </div>
-            <div id="coursetable">
+            <div id="coursetable" style="margin-top: 50px;">
             
             </div>
         </div>
     </div>
 </div>
-<script src="scripts/script.js"></script>
+<script src="scripts/managecourse.js"></script>

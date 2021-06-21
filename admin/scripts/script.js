@@ -21,5 +21,4 @@ function showCourse() {
     var query = "?schoolname=" + schoolOption;
     request.open("GET", "../ajaxfiles/processcourse.php" + query, true);
     request.send(null);
-
 }
