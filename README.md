@@ -11,18 +11,18 @@ The student section will be implemented later with features such as viewing unit
 ## Project File structure;
 * admin - This directory contains admin pages and utilities only specific to admin
     * scripts - This sub-directory contains js files for ajax queries usefull in the admin section
-        * jqdpt.js - 
-        * managecourse.js - 
-        * script.js - 
-        * studentcoursereq.js - 
-        * unitprocess.js - 
+        * jqdpt.js - sends request to processdpt.php to be used in the viewdepts.php page
+        * managecourse.js - sends request to mcourse.php to be used in the managecourse.php page
+        * script.js - sends request to processcourse.php to be used in the viewcousre.php page
+        * studentcoursereq.js - sends request to studentcourse.php to be used in the addstudent.php page
+        * unitprocess.js - sends request to processunit.php to be used in the addunit.php page
     * others  - The other files in admin are generally the web pages to be opened depending on what is clicked.
 * ajaxfiles - This file folder contains php files where ajax requests are sent for processing
-    * mcourse.php - 
-    * processcourse.php - 
-    * processdpt.php - 
-    * processunit.php - 
-    * studentcourse.php - 
+    * mcourse.php - receives requests and sends response to managecourse.js
+    * processcourse.php - receives requests and sends response to jqdpt.js
+    * processdpt.php - receives requests and sends response to jqdpt.js
+    * processunit.php - receives requests and sends response to unitprocess.js
+    * studentcourse.php - receives requests and sends response to studentcoursereq.js
 
 * public - This folder contains shared or common resources between the admin and user
 * test - This contains css and js file that dictates how all the pages are rendered. They contain the styling and working of the sidebar navigation
