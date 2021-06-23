@@ -28,7 +28,7 @@ The student section will be implemented later with features such as viewing unit
 * test - This contains css and js file that dictates how all the pages are rendered. They contain the styling and working of the sidebar navigation
 
 ## Technologies used;
-* php - This was used as the main language for development of this application and it generally dictates the page rendering
+* PHP - This was used as the main language for development of this application and it generally dictates the page rendering
 * XAMMP - This was used as a local server since PHP can't interprated by the normal browser
 * SQL - SQL was used as a database query language to communicate and retrive infomation from the database
 * phpmyadmin - This is the application that holds the database used in the project. The database name used for this applications is sms.
