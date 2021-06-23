@@ -53,3 +53,4 @@ You can clone the repository at https://github.com/ealpha072/student-management-
 ## To do
 * Add a user section that can view enrolled courses
 * Implement site security to prevent SQL injections
+* Add more descriptions for files used
