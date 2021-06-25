@@ -2,7 +2,7 @@
 
 ## Project Description;
 In this php project, i create a student management application that can be used to manage a college or university or just any institution. The application so far has a complete admin section with a student section coming soon. The admin can do a variety of things as he traverses the application. His abilities are:
-* View and add units,deartments, schools, students and courses
+* View and add units,deartments, schools, students and courses.
 * Edit and delete students, courses, units, departments
 * He can perform CRUD operations on all the above items
 
