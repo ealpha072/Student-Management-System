@@ -34,7 +34,7 @@ The student section will be implemented later with features such as viewing unit
 * phpmyadmin - This is the application that holds the database used in the project. The database name used for this applications is sms.
 * Ajax - this is a Javascript library that has been used for sending asynchronous requests to php servers and returning the response.
 * Bootstrap - This was generally used for responsive web development and web page styling. 
-* Javascript - This was used to make the user side of the application dynamic
+* Javascript - This was used to make the user side of the application dynamic.
 
 ## How it works.
 The admin has to login to access the dashboard page. To login, username = alpha, password = alpha
@@ -51,7 +51,7 @@ Feel free to make any changes to any part of the application as you wish.
 You can clone the repository at https://github.com/ealpha072/student-management-system.git
 
 ## To do
-* Add a user section that can view enrolled courses
-* Implement site security to prevent SQL injections
-* Add more descriptions for files used
-* Sessioning to control page flows
+* Add a user section that can view enrolled courses.
+* Implement site security to prevent SQL injections.
+* Add more descriptions for files used.
+* Sessioning to control page flows.
