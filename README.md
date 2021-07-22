@@ -9,7 +9,7 @@ In this php project, i create a student management application that can be used 
 The student section will be implemented later with features such as viewing units and school details...
 
 ## Project File structure;
-* admin - This directory contains admin pages and utilities only specific to admin
+* `admin` - This directory contains admin pages and utilities only specific to admin
     * scripts - This sub-directory contains js files for ajax queries usefull in the admin section
         * jqdpt.js - sends request to processdpt.php to be used in the viewdepts.php page
         * managecourse.js - sends request to mcourse.php to be used in the managecourse.php page
@@ -17,15 +17,15 @@ The student section will be implemented later with features such as viewing unit
         * studentcoursereq.js - sends request to studentcourse.php to be used in the addstudent.php page
         * unitprocess.js - sends request to processunit.php to be used in the addunit.php page
     * others  - The other files in admin are generally the web pages to be opened depending on what is clicked.
-* ajaxfiles - This file folder contains php files where ajax requests are sent for processing
+* `ajaxfiles` - This file folder contains php files where ajax requests are sent for processing
     * mcourse.php - receives requests and sends response to managecourse.js
     * processcourse.php - receives requests and sends response to jqdpt.js
     * processdpt.php - receives requests and sends response to jqdpt.js
     * processunit.php - receives requests and sends response to unitprocess.js
     * studentcourse.php - receives requests and sends response to studentcoursereq.js
 
-* public - This folder contains shared or common resources between the admin and user
-* test - This contains css and js file that dictates how all the pages are rendered. They contain the styling and working of the sidebar navigation
+* `public` - This folder contains shared or common resources between the admin and user
+* `test` - This contains css and js file that dictates how all the pages are rendered. They contain the styling and working of the sidebar navigation
 
 ## Technologies used;
 * PHP - This was used as the main language for development of this application and it generally dictates the page rendering
@@ -37,7 +37,7 @@ The student section will be implemented later with features such as viewing unit
 * Javascript - This was used to make the user side of the application dynamic.
 
 ## How it works.
-The admin has to login to access the dashboard page. To login, username = alpha, password = alpha
+The admin has to login to access the dashboard page. To login, username = `alpha`, password = `alpha`
 After login, the page directs to dashboard.php where the admin can do a number of series. The sidebar menu can be toggled to have different views. Each item on the sidebar menu redirects to a different page within the application. The courses, units and departments can be viewed per school or as a whole. When viewed per school, the school has to be selected; a request is then sent to the correct backend page in the ajaxfiles directory. A response is then sent back and the appropriate div is populated with the response of the request.
 
 For the add unit page, the admin first selects the school where the unit will belong. Once school is selected, the course select tag is populated with courses related to the selected school. The admin can the go on to enter other information about the unit and submit it. 
