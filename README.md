@@ -18,11 +18,11 @@ The student section will be implemented later with features such as viewing unit
         * unitprocess.js - sends request to processunit.php to be used in the addunit.php page
     * others  - The other files in admin are generally the web pages to be opened depending on what is clicked.
 * `ajaxfiles` - This file folder contains php files where ajax requests are sent for processing
-    * mcourse.php - receives requests and sends response to managecourse.js
-    * processcourse.php - receives requests and sends response to jqdpt.js
-    * processdpt.php - receives requests and sends response to jqdpt.js
-    * processunit.php - receives requests and sends response to unitprocess.js
-    * studentcourse.php - receives requests and sends response to studentcoursereq.js
+    * **mcourse.php** - receives requests and sends response to managecourse.js
+    * **processcourse.php** - receives requests and sends response to jqdpt.js
+    * **processdpt.php** - receives requests and sends response to jqdpt.js
+    * **processunit.php** - receives requests and sends response to unitprocess.js
+    * **studentcourse.php** - receives requests and sends response to studentcoursereq.js
 
 * `public` - This folder contains shared or common resources between the admin and user
 * `test` - This contains css and js file that dictates how all the pages are rendered. They contain the styling and working of the sidebar navigation
