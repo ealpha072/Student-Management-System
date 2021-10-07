@@ -57,3 +57,58 @@ CREATE TABLE `sms`. `departments`(
     `name` VARCHAR(255) NOT NULL , PRIMARY KEY (`id`)
 ) 
 ENGINE = InnoDB;
+
+
+/*sqlite3 tables query*/
+CREATE TABLE "courses" (
+    "id"    INTEGER NOT NULL,
+    "school"    TEXT NOT NULL,
+    "short_name"    TEXT NOT NULL,
+    "full_name" TEXT NOT NULL,
+    "date_created"  TEXT NOT NULL,
+    PRIMARY KEY("id" AUTOINCREMENT)
+);
+
+CREATE TABLE "departments" (
+    "id"    INTEGER NOT NULL,
+    "school"    TEXT NOT NULL,
+    "dpt_abbr"  TEXT NOT NULL,
+    "name"  TEXT NOT NULL,
+    PRIMARY KEY("id" AUTOINCREMENT)
+);
+
+CREATE TABLE "schools" (
+    "id"    INTEGER NOT NULL,
+    "school_name"   TEXT NOT NULL,
+    "date_created"  TEXT NOT NULL,
+    PRIMARY KEY("id" AUTOINCREMENT)
+);
+
+CREATE TABLE "students" (
+    "id"    INTEGER NOT NULL,
+    "adm_date"  TEXT NOT NULL,
+    "school"    TEXT NOT NULL,
+    "course"    TEXT NOT NULL,
+    "reg_num"   TEXT NOT NULL,
+    "first_name"    TEXT NOT NULL,
+    "mid_name"  TEXT NOT NULL,
+    "last_name" TEXT NOT NULL,
+    "gender"    TEXT NOT NULL,
+    "parent_name"   TEXT NOT NULL,
+    "parent_work"   TEXT NOT NULL,
+    "disabled"  TEXT NOT NULL,
+    "nationality"   TEXT NOT NULL,
+    "phone_num" INTEGER NOT NULL,
+    "email" TEXT NOT NULL,
+    "id_num"    INTEGER NOT NULL,
+    PRIMARY KEY("id" AUTOINCREMENT)
+);
+
+CREATE TABLE "units" (
+    "id"    INTEGER NOT NULL,
+    "school"    TEXT NOT NULL,
+    "department"    TEXT NOT NULL,
+    "unit_title"    TEXT NOT NULL,
+    "unit_name" TEXT NOT NULL,
+    PRIMARY KEY("id" AUTOINCREMENT)
+);
