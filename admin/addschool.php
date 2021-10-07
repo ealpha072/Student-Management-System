@@ -4,7 +4,7 @@
     <div class="card">
         <div class="card-header">Add Course</div>
         <div class="card-body">
-            <form action="config.php" method="POST">
+            <form action="process.php" method="POST">
                 <div class="form-group row">
                     <label for="school" class="col-sm-2 col-form-label col-form-label">Name of School</label>
                     <div class="col-sm-10">
